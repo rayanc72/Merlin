@@ -35,7 +35,7 @@ def preprocessing():
     ask1 = input("Are we using FLS980 file? (y/n)")
     if ask1 == 'y':
         file2 = input("Enter file name:")
-        #file2 = ("CHABRI-1_5p6K_to_300K.txt")
+
         with open(file2, 'r') as fin:
             data = fin.read().splitlines(True)
         with open('newfile.txt', 'w') as fout:
